@@ -13,7 +13,7 @@ html {
 body {
   box-sizing: border-box;
   background-image: linear-gradient(
-      rgba(255, 255, 255, 0.9),
+      rgb(252, 127, 18, 0.9),
       rgba(255, 255, 255, 0.9)
     ),
     url(../img/bg.avif);

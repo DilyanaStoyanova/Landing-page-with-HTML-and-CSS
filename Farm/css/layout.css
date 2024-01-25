@@ -24,7 +24,7 @@
 .header-nav-link:visited {
   display: inline-block;
   text-decoration: none;
-  color: #777;
+  color: #333;
   font-size: 1.8rem;
   font-weight: 500;
   letter-spacing: 1px;
@@ -35,30 +35,102 @@
 
 .header-nav-link:hover,
 .header-nav-link:active {
-  color: #e7a622;
+  color: #fff;
   transform: translateY(-5px) scale(1.03);
 }
 
-.header-nav-link.cta:link,
-.header-nav-link.cta:visited {
-  background-color: #e7a622;
+.header-nav-link.cta-link:link,
+.header-nav-link.cta-link:visited {
+  background-color: #ff5722;
   color: #fff;
   border-top-right-radius: 12px;
   border-bottom-left-radius: 12px;
 }
 
-.header-nav-link.cta:hover,
-.header-nav-link.cta:active {
+.header-nav-link.cta-link:hover,
+.header-nav-link.cta-link:active {
   background-color: #e67700;
 }
 
+section {
+  padding: 6.4rem 0;
+}
 /*HERO SECTION*/
-.section-hero {
-  padding: 9.6rem 0;
+.hero {
+  padding: 0 3.2rem;
 }
 
 .hero-img {
   width: 100%;
   border-radius: 12px;
   box-shadow: 0 1.2rem 2.4rem rgba(0, 0, 0, 0.3);
+}
+
+/*HOW SECTION*/
+.how {
+  padding: 0 3.2rem;
+}
+
+.step {
+  text-align: center;
+}
+
+.step-icon {
+  color: #6b8d1a;
+  font-size: 4.4rem;
+  margin-bottom: 3.2rem;
+}
+
+.step-link {
+  text-align: center;
+}
+
+/*CTA SECTION*/
+.cta {
+  background-color: #fff;
+  background-image: url(../img/bag.avif);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  border-radius: 9px;
+  box-shadow: 0 1.2rem 2.4rem rgba(0, 0, 0, 0.3);
+  opacity: 0.7;
+}
+
+.cta-text-box {
+  width: 50%;
+  padding: 3.2rem;
+}
+
+.form-cta *:focus {
+  outline: none;
+  box-shadow: 0 0 2.4rem rgba(0, 0, 0, 0.3);
+}
+
+.form-group {
+  margin-bottom: 2.4rem;
+}
+
+.form-group label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+}
+
+.form-group input,
+.form-group select {
+  width: 60%;
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-bottom: 1px solid #999;
+}
+
+.form-group select {
+  font-family: inherit;
+  color: inherit;
+  font-size: 1.6rem;
+}
+
+.form-group input::placeholder {
+  color: #aaa;
 }

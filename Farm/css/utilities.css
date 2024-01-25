@@ -6,12 +6,15 @@
 
 .grid {
   display: grid;
-  column-gap: 9.6rem;
+  column-gap: 6.4rem;
   row-gap: 6.4rem;
   justify-content: center;
-  align-items: center;
 }
 
 .grid--2-cols {
   grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
 }
