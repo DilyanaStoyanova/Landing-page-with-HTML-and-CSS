@@ -52,12 +52,17 @@
   background-color: #e67700;
 }
 
-section {
+section,
+footer {
   padding: 9.6rem 0;
 }
 /*HERO SECTION*/
 .hero {
   padding: 0 3.2rem;
+}
+
+.hero-desc {
+  margin-bottom: 2.4rem;
 }
 
 .hero-img {
@@ -89,8 +94,31 @@ section {
 /*PRODUCTS SECTION*/
 .product {
   background-color: rgba(255, 255, 255, 0.4);
-  border-radius: 9px;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
   box-shadow: 0 1.2rem 2.4rem rgba(0, 0, 0, 0.3);
+  position: relative;
+  border-bottom: 16px solid transparent;
+  transition: all 0.5s;
+}
+
+.product:hover {
+  transform: translateY(-12px);
+}
+
+.product--1 {
+  border-bottom-color: #e8cb2d;
+}
+
+.product--2 {
+  border-bottom-color: #a3312d;
+}
+.product--3 {
+  border-bottom-color: #adad70;
+}
+
+.product-img-box {
+  border-radius: 9px;
   overflow: hidden;
 }
 
@@ -100,7 +128,21 @@ section {
 
 .product-text-box {
   text-align: center;
-  padding: 3.2rem 1.6rem 1.6rem;
+  padding: 2.4rem 2.4rem 4.8rem;
+}
+
+.btn.btn--abs {
+  position: absolute;
+  left: 50%;
+  bottom: -12%;
+  transform: translate(-50%, -50%);
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 1.6rem;
 }
 
 .features-list {
@@ -111,6 +153,7 @@ section {
   display: flex;
   align-items: center;
   gap: 1.6rem;
+  line-height: 1;
 }
 
 .feature-item:not(:last-child) {
@@ -122,12 +165,11 @@ section {
 }
 
 .feature-icon {
-  font-size: 4.4rem;
+  font-size: 3rem;
   color: #ff5722;
 }
 .feature-icon.main {
-  display: inline-block;
-  margin-bottom: 2.4rem;
+  font-size: 7.4rem;
 }
 
 /*CTA SECTION*/
@@ -177,5 +219,63 @@ section {
 }
 
 .form-group input::placeholder {
+  color: #aaa;
+}
+
+/*FOOTER*/
+.footer-content {
+  padding: 0 3.2rem;
+  font-size: 1.3rem;
+  line-height: 1.4;
+}
+
+/* .footer-col {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+} */
+.footer-heading {
+  font-size: 2rem;
+  margin-bottom: 2.4rem;
+}
+
+.footer-logo {
+  width: 12rem;
+  height: 12rem;
+  margin-top: -2rem;
+  margin-left: -1.3rem;
+}
+
+.social-list {
+  list-style: none;
+  display: flex;
+  gap: 2.4rem;
+  margin-top: 1.2rem;
+  margin-bottom: 1.6rem;
+}
+
+.contacts {
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.footer-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  /* font-size: 1.6rem; */
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-icon {
+  font-size: 2.4rem;
   color: #aaa;
 }
