@@ -25,8 +25,8 @@
   display: inline-block;
   text-decoration: none;
   color: #333;
-  font-size: 1.8rem;
-  font-weight: 500;
+  font-size: 1.6rem;
+  font-weight: 600;
   letter-spacing: 1px;
   text-transform: capitalize;
   transition: all 0.3s;
@@ -52,8 +52,7 @@
   background-color: #e67700;
 }
 
-section,
-footer {
+section {
   padding: 9.6rem 0;
 }
 /*HERO SECTION*/
@@ -61,8 +60,8 @@ footer {
   padding: 0 3.2rem;
 }
 
-.hero-desc {
-  margin-bottom: 2.4rem;
+.hero-img-box {
+  align-self: center;
 }
 
 .hero-img {
@@ -172,6 +171,84 @@ footer {
   font-size: 7.4rem;
 }
 
+/*EVENT SECTION*/
+.events {
+  padding: 0 3.2rem;
+}
+
+.event {
+  height: 50rem;
+  border-radius: 9px;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.5s ease-in-out;
+}
+
+.event-1 {
+  height: 20rem;
+  background-image: url(../img/tour.jpg);
+  background-position: center;
+  background-size: cover;
+  opacity: 0.8;
+}
+
+.event-2 {
+  height: 20rem;
+  background-image: url(../img/festival.jpg);
+  background-position: center;
+  background-size: cover;
+  opacity: 0.8;
+}
+
+.event-3 {
+  height: 20rem;
+  background-image: url(../img/dinner.jpg);
+  background-position: center;
+  background-size: cover;
+  opacity: 0.8;
+}
+
+.heading-quaternary {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  position: absolute;
+  left: 5%;
+  bottom: 60%;
+}
+
+.yellow {
+  color: #e8cb2d;
+}
+
+.red {
+  color: #a3312d;
+}
+
+.green {
+  color: #adad70;
+}
+
+.event-info-1,
+.event-info-2,
+.event-info-3 {
+  opacity: 0;
+  padding: 1.2rem;
+  background-color: #fff;
+}
+
+.event-tour:hover .event-info-1 {
+  opacity: 1;
+}
+
+.event-festival:hover .event-info-2 {
+  opacity: 1;
+}
+
+.event-dinner:hover .event-info-3 {
+  opacity: 1;
+}
+
 /*CTA SECTION*/
 .cta {
   background-color: #fff;
@@ -223,17 +300,17 @@ footer {
 }
 
 /*FOOTER*/
+.footer {
+  padding: 4.8rem 0;
+  border-top: 1px solid #aaa;
+}
+
 .footer-content {
   padding: 0 3.2rem;
   font-size: 1.3rem;
   line-height: 1.4;
 }
 
-/* .footer-col {
-  display: flex;
-  flex-direction: column;
-  gap: 1.6rem;
-} */
 .footer-heading {
   font-size: 2rem;
   margin-bottom: 2.4rem;
