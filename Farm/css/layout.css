@@ -104,29 +104,39 @@ section {
   border-top-left-radius: 9px;
   border-top-right-radius: 9px;
   box-shadow: 0 1.2rem 2.4rem rgba(0, 0, 0, 0.3);
-  position: relative;
   border-bottom: 16px solid transparent;
+  overflow: hidden;
   transition: all 0.5s;
+  position: relative;
 }
 
 .product:hover {
   transform: translateY(-12px);
 }
 
-.product--1 {
-  border-bottom-color: #e8cb2d;
+.product--1::after,
+.product--2::after,
+.product--3::after {
+  content: "";
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
-.product--2 {
-  border-bottom-color: #a3312d;
-}
-.product--3 {
-  border-bottom-color: #adad70;
+.product--1:hover::after,
+.product--2:hover::after,
+.product--3:hover::after {
+  display: block;
 }
 
-.product-img-box {
-  border-radius: 9px;
-  overflow: hidden;
+.product--1:hover .box-price--1,
+.product--2:hover .box-price--2,
+.product--3:hover .box-price--3 {
+  opacity: 1;
 }
 
 .product-img {
@@ -138,11 +148,41 @@ section {
   padding: 2.4rem 2.4rem 4.8rem;
 }
 
-.btn.btn--abs {
+.box-price--1,
+.box-price--2,
+.box-price--3 {
+  opacity: 0;
+  text-align: center;
   position: absolute;
+  top: 50%;
   left: 50%;
-  bottom: -12%;
   transform: translate(-50%, -50%);
+  transition: all 0.5s;
+  z-index: 2;
+}
+
+.only {
+  display: inline-block;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+
+.price {
+  font-size: 6rem;
+  font-family: sans-serif;
+  font-weight: 100;
+  margin-bottom: 8rem;
+}
+
+.product--1 {
+  border-bottom-color: #e8cb2d;
+}
+
+.product--2 {
+  border-bottom-color: #a3312d;
+}
+.product--3 {
+  border-bottom-color: #adad70;
 }
 
 .features {
@@ -180,15 +220,11 @@ section {
 }
 
 /*EVENT SECTION*/
-.events {
-  padding: 0 3.2rem;
-}
 
 .event {
   border-radius: 9px;
   overflow: hidden;
   transition: all 0.5;
-  opacity: 0.8;
   box-shadow: 0 1.2rem 2.4rem rgba(0, 0, 0, 0.3);
 }
 
@@ -198,21 +234,7 @@ section {
 }
 
 .event-text-box {
-  padding: 1.6rem;
-  background-color: #fff;
-  opacity: 0.5;
-}
-
-.event-tour:hover .event-info-tour {
-  opacity: 1;
-}
-
-.event-festival:hover .event-info-festival {
-  opacity: 1;
-}
-
-.event-dinner:hover .event-info-dinner {
-  opacity: 1;
+  padding: 3.2rem;
 }
 
 /*CTA SECTION*/
