@@ -12,6 +12,7 @@
   height: 12rem;
   width: 12rem;
   margin-top: -2rem;
+  border-radius: 12px;
 }
 
 .header-nav-list {
@@ -27,8 +28,8 @@
   color: #333;
   font-size: 1.6rem;
   font-weight: 600;
-  letter-spacing: 1px;
   text-transform: capitalize;
+  letter-spacing: 1px;
   transition: all 0.3s;
   padding: 0.8rem 1.2rem;
 }
@@ -53,33 +54,32 @@
 }
 
 section {
-  padding: 6rem 0;
+  padding: 9.6rem 0;
 }
+
 /*HERO SECTION*/
-.hero {
-  padding: 0 3.2rem;
-}
-
 .hero-img-box {
-  align-self: center;
-}
-
-.hero-img {
-  width: 100%;
+  overflow: hidden;
   border-radius: 12px;
   box-shadow: 0 1.2rem 2.4rem rgba(0, 0, 0, 0.3);
 }
 
-/*HOW SECTION*/
-.how {
-  padding: 0 3.2rem;
+.hero-img {
+  display: block;
+  width: 100%;
+  transition: all 0.4s;
 }
 
+.hero-img-box:hover .hero-img {
+  transform: scale(1.3);
+}
+
+/*HOW SECTION*/
 .step {
   text-align: center;
   transition: all 0.3s;
   padding: 1.6rem;
-  border-radius: 9px;
+  border-radius: 12px;
 }
 
 .step:hover {
@@ -101,8 +101,8 @@ section {
 /*PRODUCTS SECTION*/
 .product {
   background-color: rgba(255, 255, 255, 0.4);
-  border-top-left-radius: 9px;
-  border-top-right-radius: 9px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
   box-shadow: 0 1.2rem 2.4rem rgba(0, 0, 0, 0.3);
   border-bottom: 16px solid transparent;
   overflow: hidden;
@@ -145,7 +145,7 @@ section {
 
 .product-text-box {
   text-align: center;
-  padding: 2.4rem 2.4rem 4.8rem;
+  padding: 2.4rem;
 }
 
 .box-price--1,
@@ -222,16 +222,16 @@ section {
 /*EVENT SECTION*/
 
 .event {
-  border-radius: 9px;
+  border-radius: 12px;
   overflow: hidden;
   transition: all 0.5;
   box-shadow: 0 1.2rem 2.4rem rgba(0, 0, 0, 0.3);
-  transform: rotate(-3deg);
-  transition: all 0.4s;
+  transform: scale(0.8);
+  transition: all 0.5s;
 }
 
 .event:hover {
-  transform: rotate(0deg);
+  transform: scale(1.03);
 }
 
 .event-img {
@@ -244,12 +244,13 @@ section {
 }
 
 /*CTA SECTION*/
+
 .cta {
   background-color: #fff;
   background-image: url(../img/bag.avif);
   background-repeat: no-repeat;
   background-position-x: right;
-  border-radius: 9px;
+  border-radius: 12px;
   box-shadow: 0 1.2rem 2.4rem rgba(0, 0, 0, 0.3);
   opacity: 0.75;
 }
@@ -294,13 +295,13 @@ section {
 }
 
 /*FOOTER*/
+
 .footer {
-  padding: 4.8rem 0;
   border-top: 1px solid #aaa;
 }
 
 .footer-content {
-  padding: 0 3.2rem;
+  padding: 4.8rem 0;
   font-size: 1.3rem;
   line-height: 1.4;
 }
@@ -315,6 +316,7 @@ section {
   height: 12rem;
   margin-top: -2rem;
   margin-left: -1.3rem;
+  border-radius: 12px;
 }
 
 .social-list {
