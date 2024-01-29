@@ -261,8 +261,8 @@ section {
 }
 
 .cta-text-box {
-  width: 55%;
-  padding: 3.2rem;
+  width: 50%;
+  padding-right: 3.6rem;
 }
 
 .form-cta *:focus {
@@ -283,7 +283,7 @@ section {
 
 .form-group input,
 .form-group select {
-  width: 80%;
+  width: 85%;
   padding: 0.8rem 1.2rem;
   border: none;
   border-bottom: 1px solid #999;
