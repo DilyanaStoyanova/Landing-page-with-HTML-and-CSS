@@ -30,22 +30,23 @@
   font-weight: 600;
   text-transform: capitalize;
   letter-spacing: 1px;
-  transition: all 0.3s;
+  transition: all 0.4s;
   padding: 0.8rem 1.2rem;
+  border-top-right-radius: 12px;
+  border-bottom-left-radius: 12px;
 }
 
 .header-nav-link:hover,
 .header-nav-link:active {
   color: #fff;
   transform: translateY(-5px) scale(1.03);
+  background-image: linear-gradient(#ff5722 calc(100% - 6px), #e8cb2d 6px);
 }
 
 .header-nav-link.cta-link:link,
 .header-nav-link.cta-link:visited {
   background-color: #ff5722;
   color: #fff;
-  border-top-right-radius: 12px;
-  border-bottom-left-radius: 12px;
 }
 
 .header-nav-link.cta-link:hover,
